@@ -1,4 +1,4 @@
-# omega2-4g-gateway
+# TowerController III: Omega2 #G Gateway
 
 Sponsored by [TowerSoftware](http://www.towersoftwareltd.com/)
 

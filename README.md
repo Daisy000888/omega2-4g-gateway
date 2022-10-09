@@ -2,7 +2,7 @@
 
 Sponsored by [TowerSoftware](http://www.towersoftwareltd.com/)
 
-<img src="https://github.com/hotteshen/omega2-4g-gateway/blob/master/doc/preview-3d.png?raw=true">
+<img src="https://github.com/hotteshen/omega2-4g-gateway/blob/develop/doc/preview-3d.png?raw=true">
 
 Onion Omega2 4G Gateway with UHF and precise GNSS module, running OpenWRT
 * Onion Omega2S+

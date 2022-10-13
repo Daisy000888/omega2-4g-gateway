@@ -82,31 +82,23 @@ Modify it like this:
 			gpios = <&gpio1 0 GPIO_ACTIVE_LOW>;
 		};
 		eth0_led0: link {
-			label = "omega2p:green:link"; 
+			label = "omega2p:green:link";
 			gpios = <&gpio0 42 GPIO_ACTIVE_LOW>;
-			default-state = "off"; 
+			default-state = "off";
 		};
 		eth0_led1: data {
-			label = "omega2p:orange:data"; 
+			label = "omega2p:orange:data";
 			gpios = <&gpio0 43 GPIO_ACTIVE_LOW>;
-			default-state = "off"; 
+			default-state = "off";
 		};
 	};
 ```
 
-### ETH1
+### ETH1 & ETH3
 
-Gateway-ed port for GNSS
-(todo)
+These are not physical PHYs, but just connected to the normal GPIO pins
 
 * `ETH1_LINK` - GPIO39, ACIVE_LOW
 * `ETH1_ACT` - GPIO40, ACIVE_LOW
 
-### ETH2
-
-Not used. Disabled by default. No need to change.
-
-### ETH3
-
-Connected to GNSS.
 (todo)

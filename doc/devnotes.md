@@ -53,6 +53,43 @@ Enabled by default. No need to change.
 * `ETH0_LINK` - GPIO42, ACIVE_LOW
 * `ETH0_ACT` - GPIO43, ACIVE_LOW
 
+Clone [https://github.com/openwrt/openwrt] and edit `target/linux/ramips/dts/mt7628an_onion_omega2.dtsi` file.
+
+Find `leds` section like the following:
+
+```
+	leds {
+		compatible = "gpio-leds";
+
+		led_system: system {
+			label = "amber:system";
+			gpios = <&gpio 44 GPIO_ACTIVE_LOW>;
+		};
+	};
+```
+
+Modify it like this:
+
+```
+	leds {
+		compatible = "gpio-leds";
+
+		system_led: system {
+			gpios = <&gpio1 0 GPIO_ACTIVE_LOW>;
+		};
+		eth0_led0: link {
+			label = "omega2p:green:link"; 
+			gpios = <&gpio0 42 GPIO_ACTIVE_LOW>;
+			default-state = "off"; 
+		};
+		eth0_led1: data {
+			label = "omega2p:orange:data"; 
+			gpios = <&gpio0 43 GPIO_ACTIVE_LOW>;
+			default-state = "off"; 
+		};
+	};
+```
+
 ### ETH1
 
 Gateway-ed port for GNSS

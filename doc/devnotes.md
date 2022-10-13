@@ -7,37 +7,41 @@ Download the latest OpenWRT sysupgrade binary and run `sysupgrade` command with 
 
 ## Enabling USB
 
-Install USB kernel modules and utils
+On the fresh new OpenWRT installation, the serial ports are not present as `/dev/ttyUSBx`.
+`lsusb` command is also not working.
+
+To solve this issue, install USB kernel modules and USB utils
 
 ```
 # opkg update
-# opkg install kmod-usb-storage
-# opkg install kmod-usb-core
-# opkg install kmod-usb-uhci
-# opkg install kmod-usb2
-* opkg install kmod-usb-serial-cp210x
-# opkg install usbutils
+* opkg install kmod-usb-serial-cp210x usbutils
 ```
 
-Now `lsusb` command is working.
+Now `lsusb` command is working, and serial ports are present under `/dev` folder.
 
 ```
 # lsusb
 Bus 001 Device 004: ID 10c4:ea60 Silicon Labs CP2102 USB to UART Bridge Controller
 Bus 001 Device 006: ID 10c4:ea60 Silicon Labs CP2102 USB to UART Bridge Controller
 Bus 002 Device 001: ID 1d6b:0001 Linux 5.10.146 ohci_hcd Generic Platform OHCI controller
-Bus 001 Device 007: ID 2c7c:0125 Android Android
 Bus 001 Device 005: ID 10c4:ea60 Silicon Labs CP2102 USB to UART Bridge Controller
 Bus 001 Device 002: ID 1a40:0101  USB 2.0 Hub
 Bus 001 Device 001: ID 1d6b:0002 Linux 5.10.146 ehci_hcd EHCI Host Controller
+# ls /dev/ttyUSB*
+/dev/ttyUSB0  /dev/ttyUSB1  /dev/ttyUSB2
 ```
 
 Listed devices are,
-* CP2102 for RS485
-* CP2102 for RS232
-* CP2102 for UHF modem
-* `2c7c:0125` is Quectel EC25
+* `ttyUSB0` : CP2102 for RS485
+* `ttyUSB1` : CP2102 for RS232
+* `ttyUSB2` : CP2102 for UHF modem
 
+
+## RS232 Loopback Testing
+
+Install `screen`
+
+```
 
 ## Enabling UART1 and UART2 to talk to GNSS module
 

@@ -39,9 +39,8 @@ Listed devices are,
 
 ## RS232 Loopback Testing
 
-Install `screen`
+(todo)
 
-```
 
 ## Enabling UART1 and UART2 to talk to GNSS module
 

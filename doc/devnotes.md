@@ -137,3 +137,52 @@ Test run WebSSH.
 # opkg update
 # opkg install python3-pyserial
 ```
+
+## OmegaExpansion
+
+OpenWRT 22.03 doesn't include Onion package repository links in the OPKG config.
+Add the following lines to `/etc/opkg/distfeeds.conf` using `vi` text editor.
+`nano` or `vim` is not installed on OpenWRT by default. To use one of them, need to install it before using.
+
+```
+src/gz omega2_core http://repo.onioniot.com/omega2/packages/core
+src/gz omega2_base http://repo.onioniot.com/omega2/packages/base
+src/gz omega2_packages http://repo.onioniot.com/omega2/packages/packages
+src/gz omega2_routing http://repo.onioniot.com/omega2/packages/routing
+src/gz omega2_onion http://repo.onioniot.com/omega2/packages/onion
+```
+
+Now update OPKG and we can see Omega2 related packages in the package list.
+
+```
+# opkg update
+# opkg list | grep OmegaExpansion
+pyOmegaExpansion - 0.9-1 - Setup for OmegaExpansion Python Package
+python3-omega-expansion - 0.9-1 - Setup for OmegaExpansion Python3 Package
+```
+
+There's one issue.
+OpenWRT 22.03 has Python version 3.10 and the future updates may have higher Python versions.
+At the time of this writing, the Onion package repository is based on OpenWRT 18.06, which has Python 3.6.
+Thus, Python packages will be organized like this.
+* Python libraries installed via `pip3 install *` will go into `/usr/lib/python3.10/`.
+* Python libraries installed via `opkg install python3-*` will go into `/user/lib/python3.10/`, if it's from OpenWRT 22.04 package repository.
+* Python libraries installed via `opkg install python3-*` will go into `/user/lib/python3.6/`, if it's from Onion package repository.
+
+In our case, the `OmegaExpansion` is installed in `/user/lib/python3.6` and thus, it cannot be imported from Python3, as it is version 3.10.
+For now, we will use Python 2.7 for interacting with Omega2 hardwares on OpenWRT 22.03.
+We have Python 3.10 already installed, which made `/usr/bin/python` linked to Python 3.10.
+Thus, we need to remove this file before installing Python 2.7 from Onion package repository.
+Python 3.10 can still be run by `python3` command after deletion.
+
+```
+# python --version
+Python 3.10.7
+# rm /usr/bin/python
+# opkg install python-light pyOmegaExpansion pyOnionI2C
+...
+# python --version
+Python 2.7.18
+# python3 --version
+Python 3.10.7
+```

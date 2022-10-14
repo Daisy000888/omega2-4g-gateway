@@ -4,8 +4,15 @@
 
 Download the latest OpenWRT sysupgrade binary and run `sysupgrade` command with it.
 
+### Python Setup
 
-## Enabling USB
+```
+# opkg update
+# opkg install python3 python3-pip
+```
+
+
+## Enabling USB and Installing USB-Serial Drivers
 
 On the fresh new OpenWRT installation, the serial ports are not present as `/dev/ttyUSBx`.
 `lsusb` command is also not working.
@@ -35,16 +42,6 @@ Listed devices are,
 * `ttyUSB0` : CP2102 for RS485
 * `ttyUSB1` : CP2102 for RS232
 * `ttyUSB2` : CP2102 for UHF modem
-
-
-## RS232 Loopback Testing
-
-(todo)
-
-
-## Enabling UART1 and UART2 to talk to GNSS module
-
-(todo)
 
 
 ## Ethernet Setup
@@ -95,23 +92,15 @@ Modify it like this:
 
 ### ETH1 & ETH3
 
-These are not physical PHYs, but just connected to the normal GPIO pins
+These are not physical PHYs, but just connected to the normal GPIO pins.
+This part should be fixed for the future hardware revisions.
+Using external PHY via SPI or direct connection between Ethernet connector to GPS module.
 
 * `ETH1_LINK` - GPIO39, ACIVE_LOW
 * `ETH1_ACT` - GPIO40, ACIVE_LOW
 
-(todo)
 
-
-### Python Setup
-
-```
-# opkg update
-# opkg install python3 python3-pip
-```
-
-
-### Running Python Web Console
+## Running Python Web Console
 
 OpenWRT build for Omega2 has its own web console written in Lua.
 Here, we're going to install and use another web console written in Python.
@@ -137,6 +126,9 @@ Test run WebSSH.
 # opkg update
 # opkg install python3-pyserial
 ```
+
+(todo)
+
 
 ## OmegaExpansion
 

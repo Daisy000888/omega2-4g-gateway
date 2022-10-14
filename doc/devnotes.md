@@ -129,3 +129,11 @@ Test run WebSSH.
 ```
 # wssh --address='0.0.0.0' --port=8000
 ```
+
+
+## UART Communication using Python
+
+```
+# opkg update
+# opkg install python3-pyserial
+```

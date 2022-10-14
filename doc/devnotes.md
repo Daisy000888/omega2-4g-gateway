@@ -101,3 +101,31 @@ These are not physical PHYs, but just connected to the normal GPIO pins
 * `ETH1_ACT` - GPIO40, ACIVE_LOW
 
 (todo)
+
+
+### Python Setup
+
+```
+# opkg update
+# opkg install python3 python3-pip
+```
+
+
+### Running Python Web Console
+
+OpenWRT build for Omega2 has its own web console written in Lua.
+Here, we're going to install and use another web console written in Python.
+
+Installing [WebSSH](https://github.com/huashengdun/webssh).
+
+```
+# opkg update
+# opkg install python3-tornado python3-paramiko python3-cryptography
+# pip install webssh
+```
+
+Test run WebSSH.
+
+```
+# wssh --address='0.0.0.0' --port=8000
+```

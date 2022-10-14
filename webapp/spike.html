@@ -81,11 +81,11 @@
         }
         .tabs {
             position: relative;
-            margin: 3rem 0;
+            margin: 1.018rem 0;
             background: #1abc9c;
-            height: 14.75rem;
+            height: calc(50rem * 0.7 + 3em);
         }
-        .tabs::before,
+
         .tabs::after {
             content: "";
             display: table;
@@ -111,28 +111,30 @@
             cursor: pointer;
             top: 0;
             transition: all 0.25s;
-        }
+        } + 1.018rem
         .tab-label:hover {
             top: -0.25rem;
             transition: top 0.25s;
         }
         .tab-content {
-            /* height: 12rem; */
-            height: calc((50rem - 1.618rem - 1.618rem) * 0.7 + 1.618rem + 1.618rem);
             position: absolute;
             z-index: 1;
             top: 2.75em;
             left: 0;
-            padding: 1.618rem;
+            padding: 0;
             background: #fff;
             color: #2c3e50;
             border-bottom: 0.25rem solid #bdc3c7;
             opacity: 0;
             transition: all 0.35s;
         }
+        .tab-content > div {
+            padding: 1.618em;
+        }
         .tab-content > iframe {
-            width: calc(50rem - 1.618rem - 1.618rem);
-            height: calc((50rem - 1.618rem - 1.618rem) * 0.7);
+            border: none;
+            width: 50rem;
+            height: calc(50rem * 0.7);
         }
         .tab-switch:checked + .tab-label {
             background: #fff;
@@ -180,7 +182,16 @@
                 <label for="tab-3" class="tab-label">RS232</label>
                 <div class="tab-content">
                     <div>
-                        Some dummy contents goes here and there. This is sample content. This is sample content. This is sample content. This is sample content. 2 ...
+                        Some dummy contents goes here and there. This is sample content. This is sample content. This is sample content. This is sample content. 3 ...
+                    </div>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="css-tabs" id="tab-4" class="tab-switch">
+                <label for="tab-4" class="tab-label">RS485</label>
+                <div class="tab-content">
+                    <div>
+                        Some dummy contents goes here and there. This is sample content. This is sample content. This is sample content. This is sample content. 4 ...
                     </div>
                 </div>
             </div>

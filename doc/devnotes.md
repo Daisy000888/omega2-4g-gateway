@@ -44,16 +44,28 @@ Listed devices are,
 * `ttyUSB1` : CP2102 for RS232
 * `ttyUSB2` : CP2102 for UHF modem
 
-### SPI and CAN
+### SPI, I2C
 
 On the fresh new OpenWRT installation, the SPI devices are not present as `/dev/spidev*`.
 The SPI device kernel driver should be installed manually.
 
 ```
-# opkg install kmod-spi-dev
+# opkg install kmod-spi-dev kmod-regmap-spi
 # insmod spidev
 # ls /dev/spi*
 /dev/spidev0.1
+```
+
+Install the drivers for I2C similar to SPI.
+
+```
+# opkg install kmod-i2c-mt7628 kmod-i2c-core kmod-regmap-i2c i2c-tools
+# ls /dev/i2c*
+/dev/i2c-0
+# i2cdetect -y 0
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:                         -- -- -- -- -- -- -- -- 
+...
 ```
 
 (todo - modifying device tree and installing MCP2515 driver)

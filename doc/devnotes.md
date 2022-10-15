@@ -1,5 +1,12 @@
 # Onion Omega2 Dev Notes
 
+## Quick Reference: Curated list of OpenWRT packages
+
+```
+base-files busybox ca-bundle dnsmasq dropbear firewall4 fstools kmod-gpio-button-hotplug kmod-leds-gpio kmod-mt7603 kmod-nft-offload kmod-sdhci-mt7620 kmod-usb-ohci kmod-usb2 libc libgcc libustream-wolfssl logd mtd netifd nftables odhcp6c odhcpd-ipv6only opkg ppp ppp-mod-pppoe procd procd-seccomp procd-ujail swconfig uboot-envtools uci uclient-fetch urandom-seed urngd wpad-basic-wolfssl
+```
+
+
 ## OpenWRT upgrade
 
 Download the latest OpenWRT sysupgrade binary and run `sysupgrade` command with it.

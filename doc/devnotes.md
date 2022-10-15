@@ -11,8 +11,9 @@ Download the latest OpenWRT sysupgrade binary and run `sysupgrade` command with 
 # opkg install python3 python3-pip
 ```
 
+## Hardware Drivers
 
-## Enabling USB and Installing USB-Serial Drivers
+### Enabling USB and Installing USB-Serial Drivers
 
 On the fresh new OpenWRT installation, the serial ports are not present as `/dev/ttyUSBx`.
 `lsusb` command is also not working.
@@ -42,6 +43,20 @@ Listed devices are,
 * `ttyUSB0` : CP2102 for RS485
 * `ttyUSB1` : CP2102 for RS232
 * `ttyUSB2` : CP2102 for UHF modem
+
+### SPI and CAN
+
+On the fresh new OpenWRT installation, the SPI devices are not present as `/dev/spidev*`.
+The SPI device kernel driver should be installed manually.
+
+```
+# opkg install kmod-spi-dev
+# insmod spidev
+# ls /dev/spi*
+/dev/spidev0.1
+```
+
+(todo - modifying device tree and installing MCP2515 driver)
 
 
 ## Ethernet Setup

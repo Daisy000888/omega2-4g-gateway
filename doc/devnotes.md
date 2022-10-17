@@ -120,12 +120,13 @@ Modify it like this:
 
 ### ETH1 & ETH3
 
-These are not physical PHYs, but just connected to the normal GPIO pins.
-This part should be fixed for the future hardware revisions.
-Using external PHY via SPI or direct connection between Ethernet connector to GPS module.
+MT7688 has an Ethernet switch feature supporting up to 5 ports.
+Need to disable Omega2's GPIOs and enable Ethernet switch feature.
 
 * `ETH1_LINK` - GPIO39, ACIVE_LOW
 * `ETH1_ACT` - GPIO40, ACIVE_LOW
+
+(todo)
 
 
 ## Running Python Web Console

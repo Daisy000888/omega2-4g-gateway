@@ -4,18 +4,10 @@ Sponsored by [TowerSoftware](http://www.towersoftwareltd.com/)
 
 <img src="https://github.com/hotteshen/omega2-4g-gateway/blob/develop/doc/image/preview-3d.png?raw=true" style="width: 50%;">
 
-<style>
-.markdown-body .highlight pre, .markdown-body pre {
-  font-size: 1em;
-  line-height: 0.8em;
-}
-</style>
 <pre style="line-height: .8em; font-size: 1em;">
 ┌──────────────────────TowerControllerIII─────────────────────┐
 │                                                             │
-│                                                             │
 │   ┌────Hardware───┐  ┌───────OS──────┐  ┌─────WebApp────┐   │
-│   │               │  │               │  │               │   │
 │   │               │  │               │  │               │   │
 │   │    Omega2S+   │  │    OpenWRT    │  │    WebSSH     │   │
 │   │               │  │               │  │               │   │
@@ -27,9 +19,7 @@ Sponsored by [TowerSoftware](http://www.towersoftwareltd.com/)
 │   │    RS232      │  │               │  │               │   │
 │   │    RS485      │  │               │  │               │   │
 │   │               │  │               │  │               │   │
-│   │               │  │               │  │               │   │
 │   └───────────────┘  └───────────────┘  └───────────────┘   │
-│                                                             │
 └─────────────────────────────────────────────────────────────┘
 </pre>
 

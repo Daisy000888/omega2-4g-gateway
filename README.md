@@ -4,7 +4,7 @@ Sponsored by [TowerSoftware](http://www.towersoftwareltd.com/)
 
 <img src="https://github.com/hotteshen/omega2-4g-gateway/blob/develop/doc/image/preview-3d.png?raw=true" style="width: 50%;">
 
-<pre style="line-height: 1em; font-size: 1em;"><code>
+<pre style="line-height: .8em; font-size: 1em;">
 ┌──────────────────────TowerControllerIII─────────────────────┐
 │                                                             │
 │                                                             │
@@ -25,7 +25,7 @@ Sponsored by [TowerSoftware](http://www.towersoftwareltd.com/)
 │   └───────────────┘  └───────────────┘  └───────────────┘   │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
-</code></pre>
+</pre>
 
 Onion Omega2 4G Gateway with UHF and precise GNSS module, running OpenWRT
 * Onion Omega2S+

@@ -60,9 +60,7 @@ The SPI device kernel driver should be installed manually.
 Install the drivers for I2C similar to SPI.
 
 ```
-# opkg install kmod-i2c-mt7628 kmod-i2c-core kmod-regmap-i2c i2c-tools
-# ls /dev/i2c*
-/dev/i2c-0
+# opkg install kmod-i2c-mt7628 kmod-i2c-core kmod-regmap-i2c ikmod-can-mcp251x
 # i2cdetect -y 0
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:                         -- -- -- -- -- -- -- -- 
@@ -107,12 +105,12 @@ Modify it like this:
 		};
 		eth0_led0: link {
 			label = "omega2p:green:link";
-			gpios = <&gpio0 42 GPIO_ACTIVE_LOW>;
+			gpios = <&gpio 42 GPIO_ACTIVE_LOW>;
 			default-state = "off";
 		};
 		eth0_led1: data {
 			label = "omega2p:orange:data";
-			gpios = <&gpio0 43 GPIO_ACTIVE_LOW>;
+			gpios = <&gpio 43 GPIO_ACTIVE_LOW>;
 			default-state = "off";
 		};
 	};

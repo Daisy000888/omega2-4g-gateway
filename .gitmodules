@@ -1,3 +1,4 @@
-[submodule "towerwrt"]
-	path = towerwrt
+[submodule "os"]
+	path = os
 	url = https://github.com/hotteshen/towerwrt
+	branch = omega2

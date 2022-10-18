@@ -30,3 +30,41 @@ Onion Omega2 4G Gateway with UHF and precise GNSS module, running OpenWRT
 * Hemisphere Vega 28 Precision GNSS Module
 * Satelline M3-TR3 UHF Transceiver Module
 * Simcom SIM7600 4G Modem in a Mini-PCIe Form
+
+## Milestones
+
+* [ ] Hardware
+  - [x] Omega2
+  - [x] USB Debug
+  - [x] Ethernet 0
+  - [x] Ethernet 1
+  - [x] GNSS
+  - [ ] UHF modem
+  - [x] 4G modem
+  - [x] RS232
+  - [ ] RS485
+  - [ ] CAN
+  - [x] System power
+  - [x] 12V fixed power out
+  - [ ] Adjustable power out
+* [ ] OS
+  - [x] Build environment
+  - [ ] Drivers
+    - [x] Ethernet 0
+    - [x] Ethernet 0 activity LEDs
+    - [ ] Ethernet switch
+    - [ ] GPIO
+    - [x] CP2102 UART driver
+    - [x] I2C driver
+    - [x] SPI driver
+    - [ ] MCP2515 CAN driver
+  - [ ] Router
+    - [ ] Wifi
+    - [ ] 4G
+    - [ ] UHF
+* [ ] WebApp
+  - [x] HTML design
+  - [x] WebSSH
+  - [ ] API server skeleton
+  - [ ] CAN/RS232/485
+  - [ ] GNSS

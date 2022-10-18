@@ -40,7 +40,7 @@ Onion Omega2 4G Gateway with UHF and precise GNSS module, running OpenWRT
   - [x] 4G modem
   - [x] RS232
   - [ ] RS485
-  - [ ] CAN
+  - [x] CAN
   - [x] System power
   - [x] 12V fixed power out
   - [ ] Adjustable power out
@@ -54,7 +54,7 @@ Onion Omega2 4G Gateway with UHF and precise GNSS module, running OpenWRT
     - [x] CP2102 UART driver
     - [x] I2C driver
     - [x] SPI driver
-    - [ ] MCP2515 CAN driver
+    - [x] MCP2515 CAN driver
   - [ ] Router
     - [ ] Wifi
     - [ ] 4G

@@ -46,11 +46,11 @@ Onion Omega2 4G Gateway with UHF and precise GNSS module, running OpenWRT
   - [ ] Adjustable power out
 * [ ] OS
   - [x] Build environment
-  - [ ] Drivers
+  - [x] Drivers
     - [x] Ethernet 0
     - [x] Ethernet 0 activity LEDs
     - [x] Ethernet switch
-    - [ ] GPIO
+    - [x] GPIO
     - [x] CP2102 UART driver
     - [x] I2C driver
     - [x] SPI driver

@@ -205,3 +205,14 @@ Python 2.7.18
 # python3 --version
 Python 3.10.7
 ```
+
+## CAN Bus testing
+
+```
+# opkg install kmod-can-mcp251x
+# insmod mcp251x
+# opkg install kmod
+# depmod -a
+# opkg install canutils canutils-cansend canutils-candump ip
+# ip link set can0 up type can bitrate 250000
+```

@@ -11,10 +11,9 @@
 * [x] 12V power out
 * [x] CAN
 * [x] Ethernet switch
+* [x] GPS module
 * [ ] UHF module
   - have no UHF module to test
-* [ ] GPS module
-  - in progress
 * [ ] RS485
   - in progress
 * [ ] AUX adjustable power out

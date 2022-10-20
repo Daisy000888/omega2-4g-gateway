@@ -28,6 +28,15 @@ Onion Omega2 4G Gateway with UHF and precise GNSS module, running OpenWRT
 * Simcom SIM7600 4G Modem in a Mini-PCIe Form
 
 
+## Parts of this project
+
+GitHub | Title | Description
+-------|-------|------------
+[towerwrt](https://github.com/hotteshen/towerwrt) | TowerWrt | A customized fork of OpenWrt for TowerController III industrial 4G gateway
+[towerwrt-packages](https://github.com/hotteshen/towerwrt-packages) | TowerWrt Packages | OpenWrt Custom Packages Collection
+[agpio-switch-mt7688](https://github.com/hotteshen/agpio-switch-mt7688) | TowerWrt Packages | Kernel Module for enabling MT7688 Ethernet Switch
+
+
 ## Milestones
 
 * [ ] Hardware

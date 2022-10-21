@@ -1,4 +1,4 @@
 [submodule "os"]
 	path = os
-	url = https://github.com/hotteshen/towerwrt
+	url = https://github.com/dumtux/towerwrt
 	branch = omega2

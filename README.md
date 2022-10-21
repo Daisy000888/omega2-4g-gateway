@@ -32,9 +32,9 @@ Onion Omega2 4G Gateway with UHF and precise GNSS module, running OpenWRT
 
 GitHub | Title | Description
 -------|-------|------------
-[towerwrt](https://github.com/hotteshen/towerwrt) | TowerWrt | A customized fork of OpenWrt for TowerController III industrial 4G gateway
-[towerwrt-packages](https://github.com/hotteshen/towerwrt-packages) | TowerWrt Packages | OpenWrt Custom Packages Collection
-[agpio-switch-mt7688](https://github.com/hotteshen/agpio-switch-mt7688) | AGPIO Switch | Kernel Module for enabling MT7688 Ethernet Switch
+[towerwrt](https://github.com/dumtux/towerwrt) | TowerWrt | A customized fork of OpenWrt for TowerController III industrial 4G gateway
+[towerwrt-packages](https://github.com/dumtux/towerwrt-packages) | TowerWrt Packages | OpenWrt Custom Packages Collection
+[agpio-switch-mt7688](https://github.com/dumtux/agpio-switch-mt7688) | AGPIO Switch | Kernel Module for enabling MT7688 Ethernet Switch
 
 
 ## Milestones

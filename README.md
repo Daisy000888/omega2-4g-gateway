@@ -2,7 +2,7 @@
 
 Sponsored by [TowerSoftware](http://www.towersoftwareltd.com/)
 
-<img src="https://github.com/hotteshen/omega2-4g-gateway/blob/develop/doc/image/preview-3d.png?raw=true" style="width: 50%;">
+<img src="https://github.com/dumtux/omega2-4g-gateway/blob/develop/doc/image/preview-3d.png?raw=true" style="width: 50%;">
 
 <pre style="line-height: .8em; font-size: 1em;"><code>
 ┌──────────────────────TowerControllerIII─────────────────────┐

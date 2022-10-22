@@ -1,4 +1,4 @@
-# TowerController III: Omega2 4G Gateway
+# TowerController III - Flexible Sensor Gateway with Omega2, 4G, UHF, and GPS
 
 Sponsored by [TowerSoftware](http://www.towersoftwareltd.com/)
 
@@ -8,7 +8,7 @@ Sponsored by [TowerSoftware](http://www.towersoftwareltd.com/)
 ┌──────────────────────TowerControllerIII─────────────────────┐
 │                                                             │
 │   ┌────Hardware───┐  ┌───────OS──────┐  ┌─────WebApp────┐   │
-│   │   (Omega2S+)  │  │    (OpenWRT)  │  │    (Python)   │   │
+│   │TowerController│  │    TowerWrt   │  │  TowerPanel   │   │
 │   │               │  │               │  │               │   │
 │   │   4G / UHF    │  │   Drivers     │  │   WebSSH      │   │
 │   │   GNSS        │  │   Routers     │  │   Bus Ctrl    │   │
@@ -35,6 +35,7 @@ GitHub | Title | Description
 [towerwrt](https://github.com/dumtux/towerwrt) | TowerWrt | A customized fork of OpenWrt for TowerController III industrial 4G gateway
 [towerwrt-packages](https://github.com/dumtux/towerwrt-packages) | TowerWrt Packages | OpenWrt Custom Packages Collection
 [agpio-switch-mt7688](https://github.com/dumtux/agpio-switch-mt7688) | AGPIO Switch | Kernel Module for enabling MT7688 Ethernet Switch
+[towerpanel](https://github.com/dumtux/towerpanel) | TowerPanel | Webapp for TowerController Operating Panel
 
 
 ## Milestones

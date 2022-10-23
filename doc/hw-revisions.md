@@ -14,10 +14,9 @@
 * [x] CAN
 * [x] Ethernet switch
 * [x] GPS module
+* [x] RS485
 * [ ] UHF module
   - have no UHF module to test
-* [ ] RS485
-  - in progress
 * [ ] AUX adjustable power out
   - can test after I2C pull up resistor fixed
 

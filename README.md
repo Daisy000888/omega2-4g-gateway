@@ -48,7 +48,7 @@ GitHub | Title | Description
   - [ ] UHF modem
   - [x] 4G modem
   - [x] RS232
-  - [ ] RS485
+  - [x] RS485
   - [x] CAN
   - [x] System power
   - [x] 12V fixed power out

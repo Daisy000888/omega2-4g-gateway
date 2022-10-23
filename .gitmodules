@@ -2,3 +2,6 @@
 	path = os
 	url = https://github.com/dumtux/towerwrt
 	branch = omega2
+[submodule "webapp"]
+	path = webapp
+	url = https://github.com/dumtux/towerpanel

@@ -1,5 +1,22 @@
 # Hardware Revisions
 
+
+## TowerController v3.0a2
+
+(Checked means Tested)
+
+* [x] 3.3V power supply quality
+* [ ] AUX power supply controlled via I2C
+* [ ] Ethernet pot Indicaters synchronized with switch status
+* [ ] PCIe connections
+
+### Discovered HW Issues
+
+(Checked means updated in the next HW revision - v3.0a2)
+
+* [ ] [FIX] Emergency BOOT button should be connected to 3.3V
+
+
 ## TowerController v3.0a1
 
 ### To Test / Tested
@@ -15,9 +32,9 @@
 * [x] Ethernet switch
 * [x] GPS module
 * [x] RS485
-* [ ] UHF module
+* [ ] ~UHF module~
   - have no UHF module to test
-* [ ] AUX adjustable power out
+* [ ] ~AUX adjustable power out~
   - can test after I2C pull up resistor fixed
 
 ### Discovered HW Issues
@@ -28,10 +45,3 @@
 * [x] [FIX] I2C bus is missing pull up resistors. Need to add 2.2~3.3k resistors
 * [x] [FIX] Ethernet port indicating LEDs pin mapping
 * [x] make PCIe connections to mini-PCIe connector for future use
-
-## TowerController v3.0a2
-
-* [ ] 3.3V power supply quality
-* [ ] AUX power supply controlled via I2C
-* [ ] Ethernet pot Indicaters synchronized with switch status
-* [ ] PCIe connections
